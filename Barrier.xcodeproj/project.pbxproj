@@ -14,6 +14,13 @@
 		D067AD822AE8477400667162 /* BarrierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067AD812AE8477400667162 /* BarrierTests.swift */; };
 		D067AD8C2AE8477400667162 /* BarrierUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067AD8B2AE8477400667162 /* BarrierUITests.swift */; };
 		D067AD8E2AE8477400667162 /* BarrierUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067AD8D2AE8477400667162 /* BarrierUITestsLaunchTests.swift */; };
+		D067AD9C2AE8489E00667162 /* MySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067AD9B2AE8489E00667162 /* MySchedule.swift */; };
+		D067AD9E2AE848A700667162 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067AD9D2AE848A700667162 /* MyModel.swift */; };
+		D0971A102AE8B62100EEA414 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0971A0F2AE8B62100EEA414 /* Colors.swift */; };
+		D0AE839F2B007FD900BE514C /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D099CE382AF362F30046C602 /* DeviceActivity.framework */; };
+		D0AE83A22B007FD900BE514C /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE83A12B007FD900BE514C /* DeviceActivityMonitorExtension.swift */; };
+		D0AE83A72B007FD900BE514C /* DeviceActivityMonitorExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D0AE839E2B007FD900BE514C /* DeviceActivityMonitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0AE83AB2B007FE400BE514C /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AE83A12B007FD900BE514C /* DeviceActivityMonitorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +38,31 @@
 			remoteGlobalIDString = D067AD6C2AE8477200667162;
 			remoteInfo = Barrier;
 		};
+		D0AE83A52B007FD900BE514C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D067AD652AE8477200667162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0AE839D2B007FD900BE514C;
+			remoteInfo = DeviceActivityMonitorExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D099CE422AF362F30046C602 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0AE83A72B007FD900BE514C /* DeviceActivityMonitorExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D05BF7772AF357AE007919BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D067AD6D2AE8477200667162 /* Barrier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barrier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D067AD702AE8477200667162 /* BarrierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrierApp.swift; sourceTree = "<group>"; };
 		D067AD722AE8477200667162 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +73,15 @@
 		D067AD872AE8477400667162 /* BarrierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarrierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D067AD8B2AE8477400667162 /* BarrierUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrierUITests.swift; sourceTree = "<group>"; };
 		D067AD8D2AE8477400667162 /* BarrierUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrierUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D067AD9A2AE847E700667162 /* Barrier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Barrier.entitlements; sourceTree = "<group>"; };
+		D067AD9B2AE8489E00667162 /* MySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySchedule.swift; sourceTree = "<group>"; };
+		D067AD9D2AE848A700667162 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		D0971A0F2AE8B62100EEA414 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D099CE382AF362F30046C602 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		D0AE839E2B007FD900BE514C /* DeviceActivityMonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeviceActivityMonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0AE83A12B007FD900BE514C /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		D0AE83A32B007FD900BE514C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0AE83A42B007FD900BE514C /* DeviceActivityMonitorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitorExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +106,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0AE839B2B007FD900BE514C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AE839F2B007FD900BE514C /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +123,8 @@
 				D067AD6F2AE8477200667162 /* Barrier */,
 				D067AD802AE8477400667162 /* BarrierTests */,
 				D067AD8A2AE8477400667162 /* BarrierUITests */,
+				D0AE83A02B007FD900BE514C /* DeviceActivityMonitorExtension */,
+				D099CE372AF362F30046C602 /* Frameworks */,
 				D067AD6E2AE8477200667162 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +135,7 @@
 				D067AD6D2AE8477200667162 /* Barrier.app */,
 				D067AD7D2AE8477400667162 /* BarrierTests.xctest */,
 				D067AD872AE8477400667162 /* BarrierUITests.xctest */,
+				D0AE839E2B007FD900BE514C /* DeviceActivityMonitorExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +143,13 @@
 		D067AD6F2AE8477200667162 /* Barrier */ = {
 			isa = PBXGroup;
 			children = (
+				D05BF7772AF357AE007919BF /* Info.plist */,
+				D067AD9A2AE847E700667162 /* Barrier.entitlements */,
 				D067AD702AE8477200667162 /* BarrierApp.swift */,
 				D067AD722AE8477200667162 /* ContentView.swift */,
+				D067AD9B2AE8489E00667162 /* MySchedule.swift */,
+				D067AD9D2AE848A700667162 /* MyModel.swift */,
+				D0971A0F2AE8B62100EEA414 /* Colors.swift */,
 				D067AD742AE8477400667162 /* Assets.xcassets */,
 				D067AD762AE8477400667162 /* Preview Content */,
 			);
@@ -127,6 +181,24 @@
 			path = BarrierUITests;
 			sourceTree = "<group>";
 		};
+		D099CE372AF362F30046C602 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D099CE382AF362F30046C602 /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0AE83A02B007FD900BE514C /* DeviceActivityMonitorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D0AE83A12B007FD900BE514C /* DeviceActivityMonitorExtension.swift */,
+				D0AE83A32B007FD900BE514C /* Info.plist */,
+				D0AE83A42B007FD900BE514C /* DeviceActivityMonitorExtension.entitlements */,
+			);
+			path = DeviceActivityMonitorExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +209,12 @@
 				D067AD692AE8477200667162 /* Sources */,
 				D067AD6A2AE8477200667162 /* Frameworks */,
 				D067AD6B2AE8477200667162 /* Resources */,
+				D099CE422AF362F30046C602 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D0AE83A62B007FD900BE514C /* PBXTargetDependency */,
 			);
 			name = Barrier;
 			productName = Barrier;
@@ -183,6 +257,23 @@
 			productReference = D067AD872AE8477400667162 /* BarrierUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D0AE839D2B007FD900BE514C /* DeviceActivityMonitorExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0AE83A82B007FD900BE514C /* Build configuration list for PBXNativeTarget "DeviceActivityMonitorExtension" */;
+			buildPhases = (
+				D0AE839A2B007FD900BE514C /* Sources */,
+				D0AE839B2B007FD900BE514C /* Frameworks */,
+				D0AE839C2B007FD900BE514C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceActivityMonitorExtension;
+			productName = DeviceActivityMonitorExtension;
+			productReference = D0AE839E2B007FD900BE514C /* DeviceActivityMonitorExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +295,9 @@
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = D067AD6C2AE8477200667162;
 					};
+					D0AE839D2B007FD900BE514C = {
+						CreatedOnToolsVersion = 15.0;
+					};
 				};
 			};
 			buildConfigurationList = D067AD682AE8477200667162 /* Build configuration list for PBXProject "Barrier" */;
@@ -222,6 +316,7 @@
 				D067AD6C2AE8477200667162 /* Barrier */,
 				D067AD7C2AE8477400667162 /* BarrierTests */,
 				D067AD862AE8477400667162 /* BarrierUITests */,
+				D0AE839D2B007FD900BE514C /* DeviceActivityMonitorExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +345,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0AE839C2B007FD900BE514C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,7 +360,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D067AD732AE8477200667162 /* ContentView.swift in Sources */,
+				D0971A102AE8B62100EEA414 /* Colors.swift in Sources */,
+				D0AE83AB2B007FE400BE514C /* DeviceActivityMonitorExtension.swift in Sources */,
 				D067AD712AE8477200667162 /* BarrierApp.swift in Sources */,
+				D067AD9C2AE8489E00667162 /* MySchedule.swift in Sources */,
+				D067AD9E2AE848A700667162 /* MyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +385,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0AE839A2B007FD900BE514C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0AE83A22B007FD900BE514C /* DeviceActivityMonitorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +405,11 @@
 			isa = PBXTargetDependency;
 			target = D067AD6C2AE8477200667162 /* Barrier */;
 			targetProxy = D067AD882AE8477400667162 /* PBXContainerItemProxy */;
+		};
+		D0AE83A62B007FD900BE514C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0AE839D2B007FD900BE514C /* DeviceActivityMonitorExtension */;
+			targetProxy = D0AE83A52B007FD900BE514C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,19 +536,22 @@
 		D067AD922AE8477400667162 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Barrier/Barrier.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Barrier/Preview Content\"";
 				DEVELOPMENT_TEAM = 3L56DRQ363;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Barrier/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +559,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Haplo.Barrier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,19 +571,22 @@
 		D067AD932AE8477400667162 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Barrier/Barrier.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Barrier/Preview Content\"";
 				DEVELOPMENT_TEAM = 3L56DRQ363;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Barrier/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +594,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Haplo.Barrier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -548,6 +679,58 @@
 			};
 			name = Release;
 		};
+		D0AE83A92B007FD900BE514C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitorExtension/DeviceActivityMonitorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Haplo.Barrier.DeviceActivityMonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0AE83AA2B007FD900BE514C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitorExtension/DeviceActivityMonitorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Haplo.Barrier.DeviceActivityMonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +766,15 @@
 			buildConfigurations = (
 				D067AD982AE8477400667162 /* Debug */,
 				D067AD992AE8477400667162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0AE83A82B007FD900BE514C /* Build configuration list for PBXNativeTarget "DeviceActivityMonitorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AE83A92B007FD900BE514C /* Debug */,
+				D0AE83AA2B007FD900BE514C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
